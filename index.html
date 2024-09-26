@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inclusión Laboral en Panamá</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #17a2b8;
+            --accent-color: #ffd700;
+            --text-color: #333;
+            --bg-color: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
+        
+        .logo {
+            width: 80px;
+            height: 80px;
+        }
+        
+        .title-container {
+            text-align: left;
+        }
+        
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 0;
+            color: var(--accent-color);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            letter-spacing: 1px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+            color: white;
+            font-weight: 400;
+        }
+        
+        nav {
+            background-color: var(--secondary-color);
+            padding: 0.5rem;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav ul li {
+            margin: 0 1rem;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            color: var(--accent-color);
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        section {
+            margin-bottom: 2rem;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        
+        .benefit-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+            }
+            
+            .title-container {
+                text-align: center;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <svg class="logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" fill="#ffffff"/>
+                <path d="M50 10 C 60 30 80 30 85 50 C 80 70 60 70 50 90 C 40 70 20 70 15 50 C 20 30 40 30 50 10" fill="#0056b3"/>
+                <circle cx="50" cy="30" r="10" fill="#ffffff"/>
+                <rect x="45" y="40" width="10" height="30" fill="#ffffff"/>
+                <path d="M30 70 Q 50 90 70 70" fill="none" stroke="#ffffff" stroke-width="5"/>
+            </svg>
+            <div class="title-container">
+                <h1 class="main-title">Inclusión Laboral Panamá</h1>
+                <p class="subtitle">Construyendo un futuro laboral diverso e inclusivo</p>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#beneficios">Beneficios</a></li>
+            <li><a href="#obligaciones">Obligaciones</a></li>
+            <li><a href="#registro">Registro</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="inicio">
+            <h2>Bienvenidos a nuestra plataforma</h2>
+            <p>Facilitamos la conexión entre empresas y personas con discapacidad para fomentar un ambiente laboral más inclusivo y diverso en Panamá.</p>
+        </section>
+        
+        <section id="beneficios">
+            <h2>Beneficios de contratar personas con discapacidad</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h3>Beneficios Fiscales</h3>
+                    <ul>
+                        <li>Deducción del doble del salario hasta por 6 meses</li>
+                        <li>Exención de impuestos en becas y materiales educativos</li>
+                        <li>Exoneración del impuesto de inmueble en ciertas condiciones</li>
+                    </ul>
+                </div>
+                <div class="benefit-card">
+                    <h3>Mejora de Imagen</h3>
+                    <p>Fortalece la reputación de su empresa como socialmente responsable y comprometida con la diversidad.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Aumento de Productividad</h3>
+                    <p>Mayor moral del equipo y reducción del ausentismo laboral.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Nuevas Perspectivas</h3>
+                    <p>Diversidad de ideas y enfoques que pueden llevar a soluciones innovadoras.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="obligaciones">
+            <h2>Obligaciones Legales</h2>
+            <ul>
+                <li>Empresas con 25 a 50 empleados: al menos una persona con discapacidad</li>
+                <li>Empresas con más de 50 empleados: 2% de la fuerza laboral debe ser personas con discapacidad</li>
+                <li>Obtener certificación del MITRADEL para acceder a incentivos fiscales</li>
+            </ul>
+        </section>
+        
+        <section id="registro">
+            <h2>Registro</h2>
+            <p>Para registrar su empresa o si es una persona con discapacidad buscando empleo, por favor contáctenos para obtener más información sobre el proceso de registro.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Inclusión Laboral en Panamá. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
